@@ -1,0 +1,107 @@
+/* ChatInput.css */
+
+.chat-input-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Ensure full width */
+}
+
+.file-input {
+    margin-right: 10px;
+}
+
+.message-input {
+    flex: 1; /* Make it flexible to occupy available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none; /* Prevent resizing */
+}
+
+.send-button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+.file-preview {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between the preview and the input area */
+}
+
+.attachment-preview {
+    max-width: 100px; /* Set maximum width for image preview */
+    max-height: 100px; /* Set maximum height for image preview */
+    object-fit: cover; /* Ensure the image covers the space while maintaining aspect ratio */
+    margin-right: 10px; /* Space between preview and remove icon */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.remove-icon {
+    cursor: pointer;
+    color: red; /* Color of the remove icon */
+    font-size: 20px; /* Size of the remove icon */
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.popup-content button {
+    margin-top: 10px;
+}
+
+.toggle-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Space between toggle bar and input area */
+}
+
+    .toggle-bar button {
+        flex: 1; /* Make buttons occupy equal space */
+        padding: 10px;
+        margin: 0 5px; /* Space between buttons */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #f0f0f0;
+    }
+
+        .toggle-bar button.active {
+            background-color: #4CAF50; /* Active button color */
+            color: white;
+        }
+
+        .toggle-bar button:hover {
+            background-color: #ddd; /* Hover effect */
+        }
+
+

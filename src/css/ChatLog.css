@@ -1,0 +1,37 @@
+.chat-box {
+    overflow-y: auto;
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.message {
+    margin: 10px 0;
+}
+
+.user-message {
+    text-align: right;
+}
+
+.bot-message {
+    text-align: left;
+}
+
+.attachment {
+    margin-top: 10px;
+    display: inline-block;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.attachment-thumbnail {
+    max-width: 100px; /* Set the maximum width of the thumbnail */
+    max-height: 100px; /* Set the maximum height of the thumbnail */
+    object-fit: cover; /* Ensure the image covers the space while maintaining aspect ratio */
+    margin-top: 10px; /* Add some space above the thumbnail */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}

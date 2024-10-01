@@ -1,0 +1,52 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+}
+
+.chat-container {
+    display: flex;
+    flex: 1; /* Take available space */
+    padding: 20px;
+    background-color: #f7f9fc; /* Light background for better visibility */
+    overflow: hidden; /* Hide overflow for the chat log */
+}
+
+.side-panel {
+    width: 200px; /* Fixed width for the side panel */
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    overflow-y: auto; /* Allow scrolling */
+}
+
+.chat-content {
+    flex: 1; /* Take remaining space for chat */
+    display: flex;
+    flex-direction: column;
+}
+
+.conversation-buttons {
+    margin-top: 10px;
+}
+
+.conversation-buttons button {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.topic-selection {
+    margin: 20px;
+    text-align: center;
+}
+
+    .topic-selection h2 {
+        margin-bottom: 10px;
+    }
+
+    .topic-selection button {
+        margin: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+

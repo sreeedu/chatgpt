@@ -1,0 +1,39 @@
+/* ConversationTile.css */
+.conversation-tile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+    .conversation-tile input {
+        margin-right: 10px;
+    }
+
+.three-dot-menu {
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-options {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.menu-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+    .menu-item:hover {
+        background-color: #f0f0f0;
+    }

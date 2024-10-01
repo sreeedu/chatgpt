@@ -1,0 +1,93 @@
+.welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #6e7ff3, #f3a683);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite; /* Animate gradient */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center the text */
+}
+
+h1 {
+    font-size: 3rem; /* Large heading */
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s forwards; /* Fade-in effect */
+    animation-delay: 0.5s; /* Delay for the heading */
+}
+
+p {
+    font-size: 1.5rem; /* Medium paragraph */
+    margin: 10px 0; /* Space around the paragraph */
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s forwards; /* Fade-in effect */
+    animation-delay: 0.8s; /* Delay for the paragraph */
+}
+
+.sign-in-button {
+    background: none; /* No background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer on hover */
+    outline: none; /* Remove outline */
+    margin: 20px;
+}
+
+    .sign-in-button img {
+        width: 200px; /* Adjusted size */
+        height: auto; /* Maintain aspect ratio */
+        transition: transform 0.2s ease, opacity 0.2s ease; /* Smooth transition */
+        opacity: 0; /* Start invisible */
+        animation: fadeIn 1s forwards; /* Fade-in effect */
+        animation-delay: 1.2s; /* Delay for the button */
+    }
+
+        .sign-in-button img:hover {
+            transform: scale(1.1); /* Slightly enlarge the button on hover */
+            opacity: 1; /* Ensure button is visible */
+        }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.bounce {
+    animation: bounce 0.3s; /* Duration of the bounce effect */
+}

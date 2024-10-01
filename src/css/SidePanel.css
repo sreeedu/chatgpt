@@ -1,0 +1,55 @@
+.side-panel {
+    width: 250px; /* Fixed width for side panel */
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+    padding: 10px; /* Optional padding */
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Full height */
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.new-conversation-btn {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .new-conversation-btn:hover {
+        background-color: #45a049; /* Darker green */
+    }
+
+.conversation-list {
+    list-style-type: none;
+    padding: 0;
+    flex-grow: 1; /* Allow list to grow */
+    overflow-y: auto; /* Allow scrolling */
+}
+
+.conversation {
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.options-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rename-input-container {
+    display: flex;
+    align-items: center;
+}
+
+    .rename-input-container input {
+        margin-right: 5px;
+    }
